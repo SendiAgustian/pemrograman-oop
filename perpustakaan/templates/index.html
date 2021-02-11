@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<title>Sendi Agustian</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Karma", sans-serif
+    }
+
+    .w3-bar-block .w3-bar-item {
+        padding: 20px
+    }
+</style>
+
+<body>
+    <!-- About Section -->
+    <div class="w3-container w3-padding-32 w3-center">
+        <h3>UAS PEMROGRAMAN OOP</h3><br>
+        <img src="{% static 'img/me.png' %}" alt="Me" class="w3-image" style="display:block;margin:auto" width="400"
+            height="533">
+        <div class="w3-padding-32">
+            <h4><b>Sendi Agustian | 19552011018</b></h4>
+            <h6><i>TIF RM 19A</i></h6>
+            <p class="container col-md-8">Disini saya membuat aplikasi sederhana yaitu <strong>CRUD DATA
+                    BUKU<strong></strong>.
+                    yang dimana ada table <u>buku</u>
+                    dan tabel <u>kelompok</u> nah dari pengelolaan kedua data yang ada ini saya menerapkan OOP yang
+                    diminta di pengelolaan datanya.</p>
+            <p>Untuk mengakses <strong>CRUD DATA BUKU</strong> selahkan mengakses nya dengan login berikut:</p>
+            <p>
+                <li>username: admin</li>
+                <li>password: admin</li>
+            </p>
+            <p>
+                <a href="{% url 'masuk' %}" class="btn btn-primary">Masuk</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
