@@ -50,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
 ROOT_URLCONF = 'perpus.urls'
@@ -126,7 +127,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'perpustakaan/static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'perpustakaan/staticfiles')
 
 LOGIN_REDIRECT_URL = 'buku'
 LOGIN_URL = 'masuk'
