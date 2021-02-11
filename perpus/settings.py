@@ -126,6 +126,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'perpustakaan/staticfiles')
 
 LOGIN_REDIRECT_URL = 'buku'
 LOGIN_URL = 'masuk'
