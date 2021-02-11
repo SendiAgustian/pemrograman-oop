@@ -1,1 +1,1 @@
-web: gunicorn perpustakaan.wsgi --log-file -
+web: gunicorn perpus.wsgi --log-file -
