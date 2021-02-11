@@ -26,7 +26,8 @@ SECRET_KEY = '6*xkuwggrto%(9as9dhq37p_z&ha^a)#h4*pcl_ha5-ew0y6dd'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'https://sendi-agustian-oop.herokuapp.com/'
+    'sendi-agustian-oop.herokuapp.com',
+    '127.0.0.1'
 ]
 
 
